@@ -45,7 +45,7 @@ VALIDATE $? "Started Mongo"
 
 sed -i 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf &>> $LOGFILE
 
-VALIDATE $? "edited mongod config
+VALIDATE $? "edited mongod config"
 
 systemctl restart mongod  &>> $LOGFILE
 
